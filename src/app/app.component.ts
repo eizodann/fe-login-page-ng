@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'fe-login-page-ng';
+  public account = {
+    password: null
+  };
+  public barLabel: string = "Password strength";
+  hide:boolean = true;
+
+  constructor() { }
+
+  ngOnInit() {
+
+  }
 }

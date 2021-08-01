@@ -1,0 +1,156 @@
+:host {
+  .signup-body {
+    display: flex;
+    // height: 100%;
+    .faded-font {
+      color: #00000099;
+    }
+
+    .desc-section {
+      flex-basis: 25%;
+      background-color: #faf6f5;
+      padding: 0 30px 30px;
+
+      h2 {
+        margin-top: 20px;
+      }
+
+      p {
+        margin-bottom: 30px;
+        font-size: 1.1em;
+      }
+
+      .img-body {
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+          position: relative;
+          left: 5vw;
+          width: 28vw;
+        }
+      }
+    }
+
+    .main-section {
+      flex-basis: 75%;
+
+      a {
+        color: #068bc9;
+        text-decoration: none;
+      }
+
+      .lang {
+        text-align: right;
+        zoom: 0.85;
+        margin-top: 20px;
+        margin-bottom: 30px;
+      }
+
+      .alt-or {
+        width: inherit;
+        text-align: center;
+      }
+
+      .main-section-signup {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+        padding-right: 30px;
+
+        .social-sign-up {
+          display: flex;
+          margin-top: 10px;
+          margin-bottom: 10px;
+
+          button {
+            margin-right: 15px;
+          }
+
+          :nth-child(2) {
+            color: #425390;
+            background-color: #f2f2f2;
+            border-radius: 4px;
+          }
+
+          :nth-child(3) {
+            background-color: #f2f2f2;
+            border-radius: 4px;
+          }
+        }
+
+        ::ng-deep .mat-checkbox-layout {
+          white-space: inherit;
+
+          .mat-checkbox-inner-container {
+            margin: 0 5px 0 0;
+          }
+        }
+
+        .submit button {
+          background-color: #f16a43;
+          color: white;
+          width: 100%;
+          margin-top: 20px;
+          margin-bottom: 12px;
+        }
+
+        // .mat-form-field button {
+        //   background-color: white;
+        //   border: none;
+        // }
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    .signup-body {
+      flex-direction: column;
+
+      .desc-section {
+        flex-basis: 25%;
+        background-color: #faf6f5;
+        padding-bottom: 86px;
+
+        p {
+          display: none;
+        }
+
+        .img-body {
+          display: flex;
+          justify-content: center;
+
+          img {
+            position: absolute;
+            left: inherit;
+            top: 20px;
+            width: 189px;
+          }
+        }
+      }
+
+      .main-section {
+        .lang {
+          display: none;
+        }
+
+        .main-section-signup {
+          margin-top: 77px;
+          padding-right: inherit;
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    .img-body {
+        justify-content: flex-end;
+
+        img {
+          left: 7vw !important;
+        }
+      }
+  }
+}

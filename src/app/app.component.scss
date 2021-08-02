@@ -119,11 +119,11 @@
 
         .img-body {
           display: flex;
-          justify-content: center;
+          justify-content: center !important;
 
           img {
             position: absolute;
-            left: inherit;
+            left: inherit !important;
             top: 20px;
             width: 189px;
           }

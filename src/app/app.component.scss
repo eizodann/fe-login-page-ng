@@ -145,11 +145,11 @@
   }
 
   @media (max-width: 850px) {
-    .img-body {
+    .signup-body .desc-section .img-body {
         justify-content: flex-end;
 
         img {
-          left: 7vw !important;
+          left: 7vw;
         }
       }
   }
